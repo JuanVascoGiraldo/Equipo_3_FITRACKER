@@ -28,7 +28,7 @@
             <h1 style="text-align: center;">Modificar dieta</h1>
         
         <div style="margin-top: 2rem;">
-            <form name="Mejercicio" action="modificareje.html" method="POST">
+            <form name="Mdie" action="modificardieta.html" method="POST">
                 <table>
                     <tr>
                         <td>id del dieta</td>
@@ -37,13 +37,13 @@
                     <tr>
                         <td>Elegir Parametro</td>
                         <td>
-                            <select name="Parametro">
-                                <option value="baja" selected>Nombre</option>
-                                <option value="media">Clasificación</option>
-                                <option value="alta">Descripcion</option>
-                                <option value="alta">Comidas Mañana</option>
-                                <option value="alta">Comidas Tarde</option>
-                                <option value="alta">Comidas Noche</option>
+                            <select name="Parametro" id="Parametro">
+                                <option value="nombre" selected>Nombre</option>
+                                <option value="clasificacion">Clasificación</option>
+                                <option value="descripcion">Descripcion</option>
+                                <option value="mañana">Comidas Mañana</option>
+                                <option value="tarde">Comidas Tarde</option>
+                                <option value="noche">Comidas Noche</option>
                             </select>
                         </td>
                     </tr>
@@ -53,7 +53,7 @@
                     </tr>
                     <tr>
                         <td></td>
-                        <td><button onclick="">Guardar</button></td>
+                        <td><button onclick="modificardie()">Guardar</button></td>
                     </tr>
                 </table>
             </form>
