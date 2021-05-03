@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/dietas.css">
+    
+    <title>Agregar Dieta</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container logo-nav-container">
+            <a href="dietas.html" class="logo"><img src="img/fittrackerlogo.png" width="100px" height="100px"></a>
+            <span class="menu-icon">Ver menú</span>
+        
+            <nav class="navigation">
+                <ul class="show">
+                    <li><a href="dietas.html">Volver</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <h1 style="text-align: center;">Agregar dietas</h1>
+        
+        <div style="margin-top: 2rem;">
+            <form name="adieta" action="agregardieta.html" method="POST">
+                <table>
+                    <tr>
+                        <td>Nombre</td>
+                        <td><input type="text" name="nombre" maxlength="30" required></td>
+                    </tr>
+                    <tr>
+                        <td>Descripcion</td>
+                        <td><textarea name="descripcion" maxlength="100" required></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Clasificación</td>
+                        <td><input type="text" name="clasificacion" maxlength="30" required></td>
+                    </tr>
+                    <tr>
+                        <td>Comidas Mañana</td>
+                        <td><input name="Mañana" maxlength="30" required></td>
+                    </tr>
+                    <tr>
+                        <td>Comidas Tarde</td>
+                        <td><input type="text" name="Tarde" maxlength="30" required></td>
+                    </tr>
+                    <tr>
+                        <td>Comidas Noche</td>
+                        <td><input type="text" name="Noche" maxlength="30" required></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button onclick="añadirdieta()">Guardar</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>  
+    </div>
+    </main>
+    <script src="js/validar.js"></script>
+</body>
+</html>

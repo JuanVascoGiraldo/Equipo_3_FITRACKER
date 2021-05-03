@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/dietas.css">
+    
+    <title>Modificar dieta</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container logo-nav-container">
+            <a href="dietas.html" class="logo"><img src="img/fittrackerlogo.png" width="100px" height="100px"></a>
+            <span class="menu-icon">Ver menú</span>
+        
+            <nav class="navigation">
+                <ul class="show">
+                    <li><a href="dietas.html">Volver</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <h1 style="text-align: center;">Modificar dieta</h1>
+        
+        <div style="margin-top: 2rem;">
+            <form name="Mejercicio" action="modificareje.html" method="POST">
+                <table>
+                    <tr>
+                        <td>id del dieta</td>
+                        <td><input type="number" name="id" max="100" required></td>
+                    </tr>
+                    <tr>
+                        <td>Elegir Parametro</td>
+                        <td>
+                            <select name="Parametro">
+                                <option value="baja" selected>Nombre</option>
+                                <option value="media">Clasificación</option>
+                                <option value="alta">Descripcion</option>
+                                <option value="alta">Comidas Mañana</option>
+                                <option value="alta">Comidas Tarde</option>
+                                <option value="alta">Comidas Noche</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Cambio</td>
+                        <td><textarea name="cambio" maxlength="100"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button onclick="">Guardar</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>  
+    </div>
+    </main>
+    <script src="js/validar.js"></script>
+</body>
+</html>

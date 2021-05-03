@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/dietas.css">
+    
+    <title>Modificar Ejercicio</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container logo-nav-container">
+            <a href="ejercicio.html" class="logo"><img src="img/fittrackerlogo.png" width="100px" height="100px"></a>
+            <span class="menu-icon">Ver menú</span>
+        
+            <nav class="navigation">
+                <ul class="show">
+                    <li><a href="ejercicio.html">Volver</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <h1 style="text-align: center;">Modificar Ejercicio</h1>
+        
+        <div style="margin-top: 2rem;">
+            <form name="Mejercicio" action="modificareje.html" method="POST">
+                <table>
+                    <tr>
+                        <td>id del ejercicio</td>
+                        <td><input type="number" name="id" max="100" required></td>
+                    </tr>
+                    <tr>
+                        <td>Elegir Parametro</td>
+                        <td>
+                            <select name="Parametro">
+                                <option value="nombre" selected>nombre</option>
+                                <option value="clasificacion">clasificación</option>
+                                <option value="calorias">calorias</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Cambio</td>
+                        <td><input name="cambio" maxlength="20" required></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button onclick="">Guardar</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>  
+    </div>
+    </main>
+    <script src="js/validar.js"></script>
+</body>
+</html>
